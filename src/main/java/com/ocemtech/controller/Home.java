@@ -1,5 +1,6 @@
 package com.ocemtech.controller;
 
+import com.ocemtech.entities.Course;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -23,8 +24,9 @@ public class Home {
 
 
     @PostMapping("/")
-    public String add() {
-        return "Create API";
+    public Course add(@RequestBody Course newCourse) {
+
+        return newCourse;
     }
 }
 
