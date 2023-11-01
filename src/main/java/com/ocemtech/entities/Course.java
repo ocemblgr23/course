@@ -11,7 +11,7 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String courseName;
-
+    
 
     public int getId() {
         return id;
